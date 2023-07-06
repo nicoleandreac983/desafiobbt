@@ -1,0 +1,9 @@
+<h1 class="text-center text-light">New movie</h1>
+<div class="container bg-success p-2">
+  <%= render "form", movie: @movie %>
+</div>  
+<br>
+
+<div>
+  <%= link_to "Back to movies", movies_path, class:"btn btn-primary" %>
+</div>

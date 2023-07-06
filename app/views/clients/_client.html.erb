@@ -1,0 +1,11 @@
+<div id="<%= dom_id client %>">
+  <tr>
+    <th class="bg-warning"scope="row"><%= client.id %></th>
+    <td class="bg-warning"><%= client.name %></td>
+    <td class="bg-warning"><%= client.age %></td>
+    <td class="bg-warning"><%= client.movies.last %></td>
+    <td class="bg-warning"><%= link_to "Ver", client, class: "btn btn-info" %></td>
+    <td class="bg-warning"><%= link_to "Editar", edit_client_path(client),class: "btn btn-primary" %></td>
+    <td class="bg-warning"><%= button_to "Eliminar", client_path(client), method: :delete, class: "btn btn-danger" %></td>
+  </tr>
+</div>

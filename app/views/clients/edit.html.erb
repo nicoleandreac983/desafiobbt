@@ -1,0 +1,10 @@
+<h1 class="text-center text-light">Editing client</h1>
+<div class="container bg-primary text-center p-3 ">
+  <%= render "form", client: @client %>
+</div>
+<br>
+
+<div >
+  <%= link_to "Show this client", @client, class:"btn btn-info" %> |
+  <%= link_to "Back to clients", clients_path, class:"btn btn-primary" %>
+</div>

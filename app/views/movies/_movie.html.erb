@@ -1,0 +1,13 @@
+<div class="col-4 py-2">
+  <div class="card border-primary border-5">
+    <% if movie.image.present? %>
+      <%= image_tag movie.image, class: "card-img-top", alt: "Movie Image" %>
+    <% else %>
+      <h2>Imagen no disponible</h2>
+    <% end %>
+    <div class="card-body text-center bg-warning">
+      <h5 class="card-title"><%= movie.name %></h5>
+      <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
